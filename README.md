@@ -8,11 +8,11 @@
 
 ### 演示
 
-地址：http://180.163.89.224:8888/
+地址：http://10.1.1.26/
 
-帳號：admin1~admin9
+帳號：同BPM帳號
 
-密碼：同帳號
+密碼：同BPM密碼
 
 ### 開發环境
 
@@ -26,13 +26,11 @@ Convience.Backend是api端
 
 ### 本地運行（docker）
 
-cd到src目錄執行docker-compose up -d --build
+Visual2019開啟Convience.Backend\Convience.sln直接運行
 
-然後訪問localhost:8888
+cd到src\Convience.Web\Managent目錄執行ng serve
 
-### 創建項目模板（後端）
-
-cd到src\Convience.Backend目錄，執行[dotnet new -i .]，這樣就創建了一個convience名稱的模板（名稱可以在template.json中修改）。然後通過[dotnet new convience -n 項目名]可以創建新項目，新項目的命名空間會被修改為剛才指定的項目名。
+然後訪問localhost:4200
 
 ### 重要变更
 
