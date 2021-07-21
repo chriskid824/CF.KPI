@@ -19,6 +19,7 @@
 vs + vs code
 
 ### 本地運行
+第一次下載請執行 npm install 安裝package
 
 Convience.Web\Managent是web端
 
