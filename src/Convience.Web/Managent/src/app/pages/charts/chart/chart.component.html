@@ -1,0 +1,64 @@
+<nb-flip-card>
+  <nb-card-front>
+    <nb-card>
+      <div echarts [options]="options" class="demo-chart"></div>
+    </nb-card>
+  </nb-card-front>
+  <nb-card-back>
+    <nb-card status="success">
+      <nb-card-header>設定</nb-card-header>
+      <nb-card-body>
+        <nb-select
+          placeholder="公司"
+          [(selected)]="selectedCompany"
+          (selectedChange)="onCompanyChange($event)"
+          style="width: 150px"
+        >
+        <nb-option [value]="undefined">全部</nb-option>
+          <nb-option
+            *ngFor="let company of companys"
+            value="{{ company.paramId }}"
+            >{{ company.paramValue }}</nb-option
+          >
+        </nb-select>
+        <nb-select
+          placeholder="部門"
+          [(selected)]="selectedDepartment"
+          (selectedChange)="onDepartmentChange($event)"
+          style="margin-left: 10px; width: 150px"
+        >
+          <nb-option
+            *ngFor="let department of departments"
+            value="{{ department.paramId }}"
+            >{{ department.paramValue }}</nb-option
+          >
+        </nb-select>
+        <nb-select
+          placeholder="指標"
+          [(selected)]="selectedColumn"
+          (selectedChange)="ngOnSelectChanges($event)"
+          style="margin-left: 10px; width: 150px"
+        >
+          <nb-option
+            *ngFor="let column of columnoptions"
+            value="{{ column.paramId }}"
+            >{{ column.paramValue }}</nb-option
+          >
+        </nb-select>
+        <nb-select
+          placeholder="選擇圖表"
+          [(selected)]="selectedItem"
+          (selectedChange)="ngOnSelectChanges($event)"
+        >
+          <nb-option value="bar">bar</nb-option>
+          <nb-option value="horizontal bar">horizontal bar</nb-option>
+          <nb-option value="line">line</nb-option>
+          <nb-option value="pie">pie</nb-option>
+          <nb-option value="rose pie">rose pie</nb-option>
+          <nb-option value="area">area</nb-option>
+          <nb-option value="area stack">area stack</nb-option>
+        </nb-select>
+      </nb-card-body>
+    </nb-card>
+  </nb-card-back>
+</nb-flip-card>

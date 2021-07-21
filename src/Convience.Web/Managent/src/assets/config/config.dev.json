@@ -1,0 +1,4 @@
+{
+    "baseUrl": "http://localhost:9999",
+    "kpiUrl": "http://localhost:57117"
+}

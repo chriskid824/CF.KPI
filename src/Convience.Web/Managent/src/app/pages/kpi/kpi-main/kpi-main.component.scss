@@ -1,0 +1,35 @@
+.show-cell {
+  background: white;
+  border-left: 1px solid lightgrey !important;
+  border-right: 1px solid lightgrey !important;
+  border-bottom: 1px solid lightgrey !important;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+}
+.show-cell td{
+  vertical-align: middle;
+  text-align: center;
+}
+.show-name {
+  font-weight: bold;
+}
+
+.show-presenter {
+  font-style: italic;
+}
+.cell-span {
+  background-color: white;
+}
+.cell-no {
+  background-color: #00e5ff!important;
+  border:0;
+}
+.ag-neo .ag-cell.top-row-span {
+  background-color: #00e5ff!important;
+  border-bottom: 0px;
+}
+.ag-neo .ag-cell.bottom-row-span {
+  border: 0px;
+  text-indent: -100em; // you can use this to hide the content of the bottom cell
+}

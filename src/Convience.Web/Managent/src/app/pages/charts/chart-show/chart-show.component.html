@@ -1,0 +1,35 @@
+<!-- <ngx-one-column-layout> -->
+<nb-layout windowMode>
+  <nb-layout-column>
+    <nb-reveal-card  [revealed]="revealed" [showToggleButton]=false>
+      <nb-card-front>
+        <nb-card>
+          <nb-card-body>
+            <div class="row">
+              <ngx-chart
+                class="col-md-4"
+                [inputOption]="options[0]" (buttonClicked)="parentEventHandlerFunction($event)"
+              ></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[1]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[2]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[3]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[4]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[5]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[6]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[7]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+              <ngx-chart class="col-md-4" [inputOption]="options[8]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </nb-card-front>
+      <nb-card-back>
+        <nb-card>
+          <nb-card-body>
+            <ngx-chart [inputOption]="options[9]" (buttonClicked)="parentEventHandlerFunction($event)"></ngx-chart>
+          </nb-card-body>
+        </nb-card>
+      </nb-card-back>
+    </nb-reveal-card>
+  </nb-layout-column>
+</nb-layout>
+<!-- </ngx-one-column-layout> -->
